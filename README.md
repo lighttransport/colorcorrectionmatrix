@@ -25,6 +25,7 @@ They are 24x3 matrix. The data are made by reading pixel values using [Natron2](
     - OpenEXR
 - C++
     - args.hxx
+    - Eigen
 
 ## Build c++ version of computeCCM
 
@@ -50,7 +51,8 @@ $ plotChart.py ccm.csv data/colorchart_photo_strobo_linear.csv data/colorchart_r
 ```
 ![plot chart](img/result_strobo.png)
 
-Each patch shows reference and corrected data. Upper one is reference and lower one is corrected color.
+Each patch shows reference color and corrected color.
+Upper one is reference and lower one is corrected color.
 The numbers mean relative error.
 
 # Color Correction
@@ -78,6 +80,14 @@ $ imageDiff.py photo_reference.png corrected.png
 
 The difference is small as the color approaches blue and 
 the difference is big as the color approaches red.
+
+# License
+
+MIT license.
+
+## Third party licenses
+- [args.hxx](https://github.com/Taywee/args) is licensed under MIT License
+- [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) is licensed under Mozilla Public License
 
 # References
 
