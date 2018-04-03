@@ -24,8 +24,8 @@ They are 24x3 matrix. The data are made by reading pixel values using [Natron2](
     - Pillow 
     - OpenEXR
 - C++
-    - args.hxx
-    - Eigen
+    - args.hxx(included in this repo)
+    - Eigen3
 
 ## Build c++ version of computeCCM
 
@@ -83,12 +83,15 @@ the difference is big as the color approaches red.
 
 # License
 
-MIT license.
+CCM is licensed under MIT license.
 
 ## Third party licenses
 - [args.hxx](https://github.com/Taywee/args) is licensed under MIT License
 - [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) is licensed under Mozilla Public License
 
+
 # References
 
+* RGB coordinates of the Macbeth ColorChecker, Danny Pascale. June 1st, 2006 version. http://www.babelcolor.com/index_htm_files/RGB%20Coordinates%20of%20the%20Macbeth%20ColorChecker.pdf
+* Color Correction Matrix http://www.imatest.com/docs/colormatrix/
 * Raw-to-raw: Mapping between image sensor color responses. CVPR 2014. https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Nguyen_Raw-to-Raw_Mapping_between_2014_CVPR_paper.pdf
